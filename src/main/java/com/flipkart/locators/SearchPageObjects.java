@@ -7,4 +7,6 @@ public interface SearchPageObjects {
     String itemDiscountPercentage = ".//div[@class=\"UkUFwK\"]/span";
     String itemBrand = ".//div[@class=\"syl9yP\"]";
     String itemsList = "//div[@class=\"hCKiGj\"]";
+    String nextPageButton = "//span[text()=\"Next\"]";
+    String currentPageOutOfTotalPage = "//span[contains(text(),\"Page\")]";
 }

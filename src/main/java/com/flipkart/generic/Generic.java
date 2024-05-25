@@ -39,9 +39,9 @@ public class Generic {
     }
 
     public void scrollToElement(String xpath){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath(xpath)));
+        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", driver.findElement(By.xpath(xpath)));
     }
 
     public void clickElement(String xpath){

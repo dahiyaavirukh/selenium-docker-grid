@@ -19,7 +19,7 @@ public class FlipkartTest extends BaseRemoteTest {
     public void testFlipkartHomepage() throws InterruptedException {
             homepage.goToFlipKart();
             homepage.clickOnSearchBoxAndSearch("Nike Shoes");
-            searchPage.printSearchedItemsTable();
+            searchPage.getTenPageData();
             Thread.sleep(10000);
         }
 }
